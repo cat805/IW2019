@@ -1,0 +1,458 @@
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/droppable.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/draggable.js"></script>
+  <link rel='stylesheet' href="/insertion.css">
+</head>
+
+<body>
+  <div class="main">
+  <h1 align = "center"> Insertion Sort </h1>
+  <p align = "center"> Directions: </p>
+  <p align  = "center">
+    1. Watch videos <a href="http://salon.cs.princeton.edu/video/147/watch/"target="_blank"3>here </a> on the different sorts
+    <br>
+    2. Fill in the empty blocks from strating from left to right </p>
+  <p align = "center">
+    <h2> Step 1 </h2>
+        <p align = "center"> a.Start with the most left box(highlighted in red). Check if the number in the blue box is smaller than the one in the red box.
+        <br>
+        b. If it is, switch the two numbers. If not, do not switch the numbers.
+        <br>
+        c. Bring the rest of the elements down</p>
+  <div >
+    <div class="container onestep">
+      <div class="dropzone temp" data-dropzone="a"  > <div class = "item" align = "center"> <font size="20">6</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="b"> <div class="item"align = "center"><font size="20">4</font></div> </div>
+      <div class="dropzone" data-dropzone="c" > <div class="item"align = "center"><font size="20">2</font></div> </div>
+      <div class="dropzone" data-dropzone="d" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone" data-dropzone="e" ><div class="item" align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone" data-dropzone="f" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone" data-dropzone="g" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="b" ></div>
+      <div class="dropzone color2" data-dropzone="a" ></div>
+      <div class="dropzone color2" data-dropzone="c" ></div>
+      <div class="dropzone color2" data-dropzone="d" ></div>
+      <div class="dropzone color2" data-dropzone="e" ></div>
+      <div class="dropzone color2" data-dropzone="f" ></div>
+      <div class="dropzone color2" data-dropzone="g" ></div>
+    </div>
+  </div>
+
+  <h2 onclick="showStep2()" > Step 2: </h2>
+  <div  id="step2" style="visibility:hidden">
+  <p align = "center">
+     a. Check if the number in the blue box is smaller than the one in the red box
+     <br>
+     b. If it is, switch the two numbers. If not, do not switch the numbers.
+     <br>
+     c. Bring the rest of the elements down
+   </p>
+
+  <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+    <div class="container onestep">
+      <div class="dropzone" data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">4</font></div> </div>
+      <div class="dropzone temp" data-dropzone="b1"> <div class="item"align = "center"><font size="20">6</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="c1" > <div class="item"align = "center"><font size="20">2</font></div> </div>
+      <div class="dropzone" data-dropzone="d1" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone" data-dropzone="e1" ><div class="item" align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone" data-dropzone="f1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="a1" ></div>
+      <div class="dropzone color2" data-dropzone="c1" ></div>
+      <div class="dropzone color2" data-dropzone="b1" ></div>
+      <div class="dropzone color2" data-dropzone="d1" ></div>
+      <div class="dropzone color2" data-dropzone="e1" ></div>
+      <div class="dropzone color2" data-dropzone="f1" ></div>
+      <div class="dropzone color2" data-dropzone="g1" ></div>
+    </div>
+  </div>
+
+  <h2 onclick="showStep2b()" > Step 2b: </h2>
+  <div  id="step2b" style="visibility:hidden">
+  <p align = "center">
+     a. Check if the blue box is smaller than the black box
+     <br>
+     b. If it is, switch the two numbers. If not, do not switch the numbers.
+     <br>
+     c. Bring the rest of the elements down
+   </p>
+
+  <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+    <div class="container onestep">
+      <div class="dropzone temp3" data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">4</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="b1"> <div class="item"align = "center"><font size="20">2</font></div> </div>
+      <div class="dropzone " data-dropzone="c1" > <div class="item"align = "center"><font size="20">6</font></div> </div>
+      <div class="dropzone" data-dropzone="d1" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone" data-dropzone="e1" ><div class="item" align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone" data-dropzone="f1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="b1" ></div>
+      <div class="dropzone color2" data-dropzone="a1" ></div>
+      <div class="dropzone color2" data-dropzone="c1" ></div>
+      <div class="dropzone color2" data-dropzone="d1" ></div>
+      <div class="dropzone color2" data-dropzone="e1" ></div>
+      <div class="dropzone color2" data-dropzone="f1" ></div>
+      <div class="dropzone color2" data-dropzone="g1" ></div>
+    </div>
+  </div>
+
+  <h2 onclick="showStep3()" > Step 3: </h2>
+  <div  id="step3" style="visibility:hidden">
+  <p align = "center">
+     a. Check if the blue box is smaller than the red box
+     <br>
+     b. If it is, switch the two numbers. If not, do not switch the numbers.
+     <br>
+     c. Bring the rest of the elements down
+   </p>
+
+  <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+    <div class="container onestep">
+      <div class="dropzone " data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+      <div class="dropzone " data-dropzone="b1"> <div class="item"align = "center"><font size="20">4</font></div> </div>
+      <div class="dropzone temp" data-dropzone="c1" > <div class="item"align = "center"><font size="20">6</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="d1" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone" data-dropzone="e1" ><div class="item" align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone" data-dropzone="f1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="a1" ></div>
+      <div class="dropzone color2" data-dropzone="b1" ></div>
+      <div class="dropzone color2" data-dropzone="d1" ></div>
+      <div class="dropzone color2" data-dropzone="c1" ></div>
+      <div class="dropzone color2" data-dropzone="e1" ></div>
+      <div class="dropzone color2" data-dropzone="f1" ></div>
+      <div class="dropzone color2" data-dropzone="g1" ></div>
+    </div>
+  </div>
+
+  <h2 onclick="showStep3b()" > Step 3b: </h2>
+  <div  id="step3b" style="visibility:hidden">
+  <p align = "center">
+     a. Check if the blue box is smaller than the black box
+     <br>
+     b. If it is, switch the two numbers. If not, do not switch the numbers.
+     <br>
+     c. Bring the rest of the elements down
+   </p>
+
+  <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+    <div class="container onestep">
+      <div class="dropzone " data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+      <div class="dropzone temp3" data-dropzone="b1"> <div class="item"align = "center"><font size="20">4</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="c1" > <div class="item"align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone " data-dropzone="d1" ><div class="item" align = "center"><font size="20">6</font></div> </div>
+      <div class="dropzone" data-dropzone="e1" ><div class="item" align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone" data-dropzone="f1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="a1" ></div>
+      <div class="dropzone color2" data-dropzone="b1" ></div>
+      <div class="dropzone color2" data-dropzone="c1" ></div>
+      <div class="dropzone color2" data-dropzone="d1" ></div>
+      <div class="dropzone color2" data-dropzone="e1" ></div>
+      <div class="dropzone color2" data-dropzone="f1" ></div>
+      <div class="dropzone color2" data-dropzone="g1" ></div>
+    </div>
+  </div>
+
+  <h2 onclick="showStep3c()" > Step 3c: </h2>
+  <div  id="step3c" style="visibility:hidden">
+  <p align = "center">
+     a. Check if the blue box is smaller than the black box
+     <br>
+     b. If it is, switch the two numbers. If not, do not switch the numbers.
+     <br>
+     c. Bring the rest of the elements down
+   </p>
+
+  <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+    <div class="container onestep">
+      <div class="dropzone temp3" data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="b1"> <div class="item"align = "center"><font size="20">4</font></div> </div>
+      <div class="dropzone " data-dropzone="c1" > <div class="item"align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone " data-dropzone="d1" ><div class="item" align = "center"><font size="20">6</font></div> </div>
+      <div class="dropzone" data-dropzone="e1" ><div class="item" align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone" data-dropzone="f1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="a1" ></div>
+      <div class="dropzone color2" data-dropzone="b1" ></div>
+      <div class="dropzone color2" data-dropzone="c1" ></div>
+      <div class="dropzone color2" data-dropzone="e1" ></div>
+      <div class="dropzone color2" data-dropzone="d1" ></div>
+      <div class="dropzone color2" data-dropzone="f1" ></div>
+      <div class="dropzone color2" data-dropzone="g1" ></div>
+    </div>
+  </div>
+  <h2 onclick="showStep4()" > Step 4: </h2>
+  <div  id="step4" style="visibility:hidden">
+  <p align = "center">
+     a. Check if the blue box is smaller than the red box
+     <br>
+     b. If it is, switch the two numbers. If not, do not switch the numbers.
+     <br>
+     c. Bring the rest of the elements down
+   </p>
+
+  <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+    <div class="container onestep">
+      <div class="dropzone " data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+      <div class="dropzone " data-dropzone="b1"> <div class="item"align = "center"><font size="20">4</font></div> </div>
+      <div class="dropzone " data-dropzone="c1" > <div class="item"align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone temp" data-dropzone="d1" ><div class="item" align = "center"><font size="20">6</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="e1" ><div class="item" align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone" data-dropzone="f1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="a1" ></div>
+      <div class="dropzone color2" data-dropzone="b1" ></div>
+      <div class="dropzone color2" data-dropzone="c1" ></div>
+      <div class="dropzone color2" data-dropzone="e1" ></div>
+      <div class="dropzone color2" data-dropzone="d1" ></div>
+      <div class="dropzone color2" data-dropzone="f1" ></div>
+      <div class="dropzone color2" data-dropzone="g1" ></div>
+    </div>
+  </div>
+
+  <h2 onclick="showStep4b()" > Step 4b: </h2>
+  <div  id="step4b" style="visibility:hidden">
+  <p align = "center">
+     a. Check if the blue box is smaller than the black box
+     <br>
+     b. If it is, switch the two numbers. If not, do not switch the numbers.
+     <br>
+     c. Bring the rest of the elements down
+   </p>
+
+  <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+    <div class="container onestep">
+      <div class="dropzone " data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+      <div class="dropzone " data-dropzone="b1"> <div class="item"align = "center"><font size="20">4</font></div> </div>
+      <div class="dropzone temp3" data-dropzone="c1" > <div class="item"align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="d1" ><div class="item" align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone " data-dropzone="e1" ><div class="item" align = "center"><font size="20">6</font></div> </div>
+      <div class="dropzone" data-dropzone="f1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="a1" ></div>
+      <div class="dropzone color2" data-dropzone="b1" ></div>
+      <div class="dropzone color2" data-dropzone="d1" ></div>
+      <div class="dropzone color2" data-dropzone="c1" ></div>
+      <div class="dropzone color2" data-dropzone="e1" ></div>
+      <div class="dropzone color2" data-dropzone="f1" ></div>
+      <div class="dropzone color2" data-dropzone="g1" ></div>
+    </div>
+  </div>
+
+  <h2 onclick="showStep4c()" > Step 4c: </h2>
+  <div  id="step4c" style="visibility:hidden">
+  <p align = "center">
+     a. Check if the blue box is smaller than the black box
+     <br>
+     b. If it is, switch the two numbers. If not, do not switch the numbers.
+     <br>
+     c. Bring the rest of the elements down
+   </p>
+
+  <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+    <div class="container onestep">
+      <div class="dropzone " data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+      <div class="dropzone temp3" data-dropzone="b1"> <div class="item"align = "center"><font size="20">4</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="c1" > <div class="item"align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone " data-dropzone="d1" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone " data-dropzone="e1" ><div class="item" align = "center"><font size="20">6</font></div> </div>
+      <div class="dropzone" data-dropzone="f1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="a1" ></div>
+      <div class="dropzone color2" data-dropzone="c1" ></div>
+      <div class="dropzone color2" data-dropzone="b1" ></div>
+      <div class="dropzone color2" data-dropzone="d1" ></div>
+      <div class="dropzone color2" data-dropzone="e1" ></div>
+      <div class="dropzone color2" data-dropzone="f1" ></div>
+      <div class="dropzone color2" data-dropzone="g1" ></div>
+    </div>
+  </div>
+
+  <h2 onclick="showStep5()" > Step 5: </h2>
+  <div  id="step5" style="visibility:hidden">
+  <p align = "center">
+     a. Check if the number in the blue box is smaller than the one in the red box
+     <br>
+     b. If it is, switch the two numbers. If not, do not switch the numbers.
+     <br>
+     c. Bring the rest of the elements down
+   </p>
+
+  <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+    <div class="container onestep">
+      <div class="dropzone" data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+      <div class="dropzone " data-dropzone="b1"> <div class="item"align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone " data-dropzone="c1" > <div class="item"align = "center"><font size="20">4</font></div> </div>
+      <div class="dropzone" data-dropzone="d1" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone temp" data-dropzone="e1" ><div class="item" align = "center"><font size="20">6</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="f1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="a1" ></div>
+      <div class="dropzone color2" data-dropzone="b1" ></div>
+      <div class="dropzone color2" data-dropzone="c1" ></div>
+      <div class="dropzone color2" data-dropzone="d1" ></div>
+      <div class="dropzone color2" data-dropzone="f1" ></div>
+      <div class="dropzone color2" data-dropzone="e1" ></div>
+      <div class="dropzone color2" data-dropzone="g1" ></div>
+    </div>
+  </div>
+
+  <h2 onclick="showStep5b()" > Step 5b: </h2>
+  <div  id="step5b" style="visibility:hidden">
+  <p align = "center">
+     a. Check if the number in the blue box is smaller than the one in the black box
+     <br>
+     b. If it is, switch the two numbers. If not, do not switch the numbers.
+     <br>
+     c. Bring the rest of the elements down
+   </p>
+
+  <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+    <div class="container onestep">
+      <div class="dropzone" data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+      <div class="dropzone " data-dropzone="b1"> <div class="item"align = "center"><font size="20">3</font></div> </div>
+      <div class="dropzone " data-dropzone="c1" > <div class="item"align = "center"><font size="20">4</font></div> </div>
+      <div class="dropzone temp3" data-dropzone="d1" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+      <div class="dropzone temp2" data-dropzone="e1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+      <div class="dropzone " data-dropzone="f1" ><div class="item" align = "center"><font size="20">6</font></div> </div>
+      <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+    </div>
+    <div class="container onestep">
+      <div class="dropzone color2" data-dropzone="a1" ></div>
+      <div class="dropzone color2" data-dropzone="b1" ></div>
+      <div class="dropzone color2" data-dropzone="c1" ></div>
+      <div class="dropzone color2" data-dropzone="e1" ></div>
+      <div class="dropzone color2" data-dropzone="d1" ></div>
+      <div class="dropzone color2" data-dropzone="f1" ></div>
+      <div class="dropzone color2" data-dropzone="g1" ></div>
+    </div>
+  </div>
+
+
+    <h2 onclick="showStep5c()" > Step 5c: </h2>
+    <div  id="step5c" style="visibility:hidden">
+    <p align = "center">
+       a. Check if the number in the blue box is smaller than the one in the black box
+       <br>
+       b. If it is, switch the two numbers. If not, do not switch the numbers.
+       <br>
+       c. Bring the rest of the elements down
+     </p>
+
+    <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+      <div class="container onestep">
+        <div class="dropzone" data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+        <div class="dropzone " data-dropzone="b1"> <div class="item"align = "center"><font size="20">3</font></div> </div>
+        <div class="dropzone temp3" data-dropzone="c1" > <div class="item"align = "center"><font size="20">4</font></div> </div>
+        <div class="dropzone temp2" data-dropzone="d1" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+        <div class="dropzone " data-dropzone="e1" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+        <div class="dropzone " data-dropzone="f1" ><div class="item" align = "center"><font size="20">6</font></div> </div>
+        <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+      </div>
+      <div class="container onestep">
+        <div class="dropzone color2" data-dropzone="a1" ></div>
+        <div class="dropzone color2" data-dropzone="b1" ></div>
+        <div class="dropzone color2" data-dropzone="d1" ></div>
+        <div class="dropzone color2" data-dropzone="c1" ></div>
+        <div class="dropzone color2" data-dropzone="e1" ></div>
+        <div class="dropzone color2" data-dropzone="f1" ></div>
+        <div class="dropzone color2" data-dropzone="g1" ></div>
+      </div>
+    </div>
+
+    <h2 onclick="showStep5d()" > Step 5d: </h2>
+    <div  id="step5d" style="visibility:hidden">
+    <p align = "center">
+       a. Check if the number in the blue box is smaller than the one in the black box
+       <br>
+       b. If it is, switch the two numbers. If not, do not switch the numbers.
+       <br>
+       c. Bring the rest of the elements down
+     </p>
+
+    <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+      <div class="container onestep">
+        <div class="dropzone" data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+        <div class="dropzone temp3" data-dropzone="b1"> <div class="item"align = "center"><font size="20">3</font></div> </div>
+        <div class="dropzone temp2" data-dropzone="c1" > <div class="item"align = "center"><font size="20">1</font></div> </div>
+        <div class="dropzone " data-dropzone="d1" ><div class="item" align = "center"><font size="20">4</font></div> </div>
+        <div class="dropzone " data-dropzone="e1" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+        <div class="dropzone " data-dropzone="f1" ><div class="item" align = "center"><font size="20">6</font></div> </div>
+        <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+      </div>
+      <div class="container onestep">
+        <div class="dropzone color2" data-dropzone="a1" ></div>
+        <div class="dropzone color2" data-dropzone="c1" ></div>
+        <div class="dropzone color2" data-dropzone="b1" ></div>
+        <div class="dropzone color2" data-dropzone="d1" ></div>
+        <div class="dropzone color2" data-dropzone="e1" ></div>
+        <div class="dropzone color2" data-dropzone="f1" ></div>
+        <div class="dropzone color2" data-dropzone="g1" ></div>
+      </div>
+    </div>
+
+    <h2 onclick="showStep5e()" > Step 5e: </h2>
+    <div  id="step5e" style="visibility:hidden">
+    <p align = "center">
+       a. Check if the number in the blue box is smaller than the one in the black box
+       <br>
+       b. If it is, switch the two numbers. If not, do not switch the numbers.
+       <br>
+       c. Bring the rest of the elements down
+     </p>
+
+    <!-- <div class="main" id="step2" style="visibility:hidden"> -->
+      <div class="container onestep">
+        <div class="dropzone temp3" data-dropzone="a1" > <div class = "item"align = "center"> <font size="20">2</font></div> </div>
+        <div class="dropzone temp2" data-dropzone="b1"> <div class="item"align = "center"><font size="20">1</font></div> </div>
+        <div class="dropzone " data-dropzone="c1" > <div class="item"align = "center"><font size="20">3</font></div> </div>
+        <div class="dropzone " data-dropzone="d1" ><div class="item" align = "center"><font size="20">4</font></div> </div>
+        <div class="dropzone " data-dropzone="e1" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+        <div class="dropzone " data-dropzone="f1" ><div class="item" align = "center"><font size="20">6</font></div> </div>
+        <div class="dropzone" data-dropzone="g1" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+      </div>
+      <div class="container onestep">
+        <div class="dropzone color2" data-dropzone="b1" ></div>
+        <div class="dropzone color2" data-dropzone="a1" ></div>
+        <div class="dropzone color2" data-dropzone="c1" ></div>
+        <div class="dropzone color2" data-dropzone="d1" ></div>
+        <div class="dropzone color2" data-dropzone="e1" ></div>
+        <div class="dropzone color2" data-dropzone="f1" ></div>
+        <div class="dropzone color2" data-dropzone="g1" ></div>
+      </div>
+    </div>
+
+  <!-- Sidebar -->
+  <div class="sidenav">
+    <a href="index.html">Selection Sort</a>
+    <a href="insertion.html">Insertion Sort</a>
+    <a href="quick.html">Quick Sort</a>
+    <a href="merge">Merge Sort</a>
+    <a href="practice1.html">Practice Selection Sort</a>
+  </div>
+</div>
+
+
+  <script src="/insertion.js"></script>
+</body>

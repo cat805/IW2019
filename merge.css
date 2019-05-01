@@ -1,0 +1,117 @@
+
+.item {
+  list-style: none;
+}
+
+.dropzone {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 8px;
+
+}
+
+.temp2{
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  margin: 8px;
+
+}
+.temp9{
+  width: 100px;
+  height: 100px;
+  background-color: lightsalmon;
+  margin: 8px;
+}
+.temp4{
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  margin: 8px;
+
+}
+.temp5{
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  margin: 8px;
+
+}
+.temp6{
+  width: 100px;
+  height: 100px;
+  background-color: lavender;
+  margin: 8px;
+
+}
+.temp7{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 8px;
+}
+.temp8{
+  width: 100px;
+  height: 100px;
+  background-color: rosybrown;
+  margin: 8px;
+}
+
+.onestep {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.temp{
+   border-style: solid;
+   border-color: red;
+}
+
+.temp3{
+   border-style: solid;
+   border-color: blue;
+}
+
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 18px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.container {
+}

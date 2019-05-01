@@ -1,0 +1,71 @@
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/droppable.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/draggable.js"></script>
+  <link rel='stylesheet' href="/quick.css">
+</head>
+
+<body>
+
+  <div class="main">
+  <h1 align = "center"> <font face="palatino"> Quick Sort </font> </h1>
+  <p align = "center"> <font face="palatino">Directions: </font></p>
+  <p align  = "center">
+    <font face="palatino">
+    1. Watch videos <a href="http://salon.cs.princeton.edu/video/147/watch/"target="_blank"3>here </a> on the different sorts
+    <br>
+    2. Fill in the empty pink blocks from starting from left to right by dragging the numbers from the blue blocks
+    <br>
+    <br>
+    <b> * For the sake of this problem, let the partition = 5 * </b>
+    <br>
+    <br>
+    - If the number is smaller, it goes before the partition
+    <br>
+    - If the number is larger, it goes after the partition
+
+</font>
+  </p>
+
+  <h2 > <font face="palatino"> Step 1: </font> </h2>
+<p align = "center">
+  <font face="palatino">
+  a. Switch the first element with the smallest number (highlighted in blue)
+  <br>
+ b. Bring the rest of the elements down
+ </font>
+</p>
+<div >
+  <div class="container onestep">
+    <div class="dropzone " data-dropzone="a"  > <div class = "item" align = "center"> <font size="20">6</font></div> </div>
+    <div class="dropzone" data-dropzone="b"> <div class="item"align = "center"><font size="20">4</font></div> </div>
+    <div class="dropzone" data-dropzone="c" > <div class="item"align = "center"><font size="20">2</font></div> </div>
+    <div class="dropzone temp" data-dropzone="d" ><div class="item" align = "center"><font size="20">5</font></div> </div>
+    <div class="dropzone" data-dropzone="e" ><div class="item" align = "center"><font size="20">3</font></div> </div>
+    <div class="dropzone " data-dropzone="f" ><div class="item" align = "center"><font size="20">1</font></div> </div>
+    <div class="dropzone" data-dropzone="g" ><div class="item"align = "center" ><font size="20">7</font></div> </div>
+  </div>
+  <div class="container onestep">
+    <div class="dropzone temp2" data-dropzone="f" ></div>
+    <div class="dropzone temp2" data-dropzone="b" ></div>
+    <div class="dropzone temp2" data-dropzone="c" ></div>
+    <div class="dropzone temp2" data-dropzone="d" ></div>
+    <div class="dropzone temp2" data-dropzone="e" ></div>
+    <div class="dropzone temp2" data-dropzone="a" ></div>
+    <div class="dropzone temp2" data-dropzone="g" ></div>
+  </div>
+</div>
+
+
+  <!-- Sidebar -->
+  <div class="sidenav">
+    <a href="index.html">Selection Sort</a>
+    <a href="insertion.html">Insertion Sort</a>
+    <a href="quick.html">Quick Sort</a>
+    <a href="merge.html">Merge Sort</a>
+    <a href="practice1.html">Practice Selection Sort</a>
+  </div>
+</div>
+
+
+  <script src="/quick.js"></script>
+</body>
